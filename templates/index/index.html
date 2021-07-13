@@ -1,0 +1,381 @@
+{% load static %}
+<!DOCTYPE html>
+<html lang="ru">
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">    
+          
+    <!-- ===========================
+    THEME INFO
+    =========================== -->
+    <meta name="description" content="A free Bootstrap powerd HTML template exclusively crafted for the super lazy designers like me who designed thousand of websites till today but never got a chance to build one himself.">
+    <meta name="keywords" content="Free Portfolio Template, Free Template, Free Bootstrap Template, Dribbble Portfolio Template, Free HTML5 Template">
+    <meta name="author" content="EvenFly Team">
+
+    <!-- ===========================
+    SITE TITLE
+    =========================== -->
+    <title>AnatomyTatto - Тату салон Ульяновск</title><!-- This is what you see on your browser tab-->
+    
+    <!-- ===========================
+    FAVICONS
+    =========================== -->
+    <link rel="icon" href="{% static "source/img/favicon.png" %}">
+    <link rel="apple-touch-icon" sizes="144x144" href={% static "source/img/apple-touch-icon-ipad-retina.png" %} />
+    <link rel="apple-touch-icon" sizes="114x114" href={% static "source/img/apple-touch-icon-iphone-retina.png" %} />
+    <link rel="apple-touch-icon" sizes="72x72" href={% static "source/img/apple-touch-icon-ipad.png" %} />
+    <link rel="apple-touch-icon" sizes="57x57" href={% static "source/img/apple-touch-icon-iphone.png" %} />
+     
+    <!-- ===========================
+    STYLESHEETS
+    =========================== -->    
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.0/css/bootstrap.min.css">
+    <link rel="stylesheet" href={% static "source/css/preloader.css" %}>
+    <link rel="stylesheet" href={% static "source/css/style.css" %}>
+    <link rel="stylesheet" href={% static "source/css/responsive.css" %}>
+    <link rel="stylesheet" href={% static  "source/css/animate.css" %}>
+        
+    <!-- ===========================
+    ICONS: 
+    =========================== -->
+    <link rel="stylesheet" href={% static "source/css/simple-line-icons.css" %}>
+    
+    <!-- ===========================
+    GOOGLE FONTS
+    =========================== -->    
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Antic|Raleway:300">
+
+    <!-- HTML5 shim and Respond.js for IE8 support of HTML5 elements and media queries -->
+    <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
+    <!--[if lt IE 9]>
+      <script src="https://oss.maxcdn.com/html5shiv/3.7.2/html5shiv.min.js"></script>
+      <script src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js"></script>
+    <![endif]-->
+    
+  <!-- ===========================
+   GOOGLE ANALYTICS (Optional)
+   =========================== -->
+    
+    <!--Replace this line with your analytics code-->
+     
+    <!-- Analytics end-->
+  
+   </head>
+    <body data-spy="scroll">
+        <!-- Preloader -->
+        <div id="preloader">           
+            <div id="status">
+                <div class="loadicon icon-moustache wow tada infinite" data-wow-duration="8s"></div>
+            </div>
+        </div>
+        
+       <header>               
+        <!-- ===========================
+        HERO AREA
+        =========================== -->
+        <div id="hero">           
+            <div class="container herocontent">               
+                <h2 class="wow fadeInUp" data-wow-duration="2s">Тату салон Ульяновск</h2>                
+                <h4 class="wow fadeInDown" data-wow-duration="3s">Татуировка – древнее искусство, которое помогает современным людям проявлять свою индивидуальность. Студия художественной татуировки AnatomyTatto – актуальное место, если вам близок именно такой способ украшения своего тела. Наши профессиональные мастера в уютном и современном тату салоне обладают всеми необходимыми знаниями и навыками, чтобы вы смогли получить именно такой результат, который ожидаете. Качественную, красивую татуировку.</h4>  
+                <a type="button" class="btn btn-primary btn-lg" href="https://vk.com/ds309">
+                    Записаться на сеанс
+                </a>     
+            </div>
+            
+            <!-- Featured image on the Hero area -->
+            <img class="heroshot wow bounceInUp" data-wow-duration="4s" src="{% static '/source/img/hero-img.png' %}" alt="Featured Work" width="100">
+        </div><!--HERO AREA END-->        
+        
+        <!-- ===========================
+         NAVBAR START
+         =========================== -->
+          <nav class="navbar navbar-inverse navbar-fixed-top" role="navigation">
+               <div class="container">
+                   
+                      <div class="navbar-header">
+                       <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-collapse">
+                           <span class="sr-only">Меню сайта</span>
+                           <span class="icon-bar"></span>
+                           <span class="icon-bar"></span>
+                           <span class="icon-bar"></span>
+                        </button>
+                        
+                           <a class="navbar-brand" href="#hero">
+                            <!-- Replace Drifolio Bootstrap with your Site Name and remove icon-grid to remove the placeholder icon -->
+                            <span class="brandname">AnatomyTatto</span>
+                        </a>
+                    </div>
+
+                <div class="collapse navbar-collapse">
+                    <ul class="nav navbar-nav navbar-right"><!--YOUR NAVIGATION ITEMS STRAT BELOW-->
+                        <li><a href="#about"><span class="btnicon icon-user"></span>О нас</a></li>
+                        <li><a href="#services"><span class="btnicon icon-cup"></span>Услуги</a></li>
+                        <li><a href="#portfolio"><span class="btnicon icon-rocket"></span>Партфолио</a></li>
+                        <li><a href="#testimonials"><span class="btnicon icon-bubble"></span>Отзывы</a></li>
+                        
+                        <!--don't forget to replace my email address below with yours-->
+                        <li><a href="https://vk.com/ds309"><span class="btnicon icon-envelope-open"></span>Записаться на прием</a></li>
+                    </ul>
+                
+                </div><!--.nav-collapse -->
+            </div>
+        </nav><!--navbar end-->        
+     </header><!--header end-->     
+
+    <!-- ===========================
+    FEATURED CLIENTS SECTION START
+    =========================== -->
+     <div id="clients">
+         <div class="container">
+             <div class="col-md-3">
+                 <h4>Мы принимаем:</h4>
+             </div>
+             <div class="col-md-9">
+                 <ul><!--CLIENTS LOGO-->
+                     <li><img src="{% static 'source/img/payoneer.png' %}" alt="Payoneer" width="100"></li>
+                     <li><img src="{% static 'source/img/1280px-Mastercard_2019_logo.svg.png' %}" alt="Amazon" width="100"></li>
+                     <li><img src="{% static 'source/img/sber.png' %}" width="100" alt="sber"></li>
+                     <li><img src="{% static 'source/img/загружено.png' %}" alt="Curb Envy" width="100"></li>
+                 </ul><!--CLIENTS LOGO END-->
+             </div>
+         </div>
+         <hr><!-- SECTION SEPARETOR LINE -->
+     </div><!--FEATURED CLIENTS SECTION END-->
+     
+    
+    <!-- ===========================
+    ABOUT SECTION START
+    =========================== -->
+     <div id="about" class="container">
+        
+        <!-- LEFT PART OF THE ABOUT SECTION -->
+         <div class="col-md-6">
+            <div class="row">
+             <h2 class="wow fadeInDown" data-wow-duration="2s">Немного обо мне</h2>
+
+             <h4 class="wow fadeInUp" data-wow-duration="3s">Я Дарья Ширманова, тату-мастер из Ульяновска основатель студии ANATOMY TATTO!</h4>
+             
+             <p class="wow fadeInDown" data-wow-duration="3s">Будет это твоя первая тату или их уже десяток
+                будь уверен – сделаешь татуировку в ANATOMY TATTO
+                И останешься очень доволен ;)</p>
+             <p class="wow fadeInDown" data-wow-duration="3s">
+                Подберем по твоим желаниям татуировку
+                которая будет радовать, разработаем эскиз
+                и сделает все так как ты задумал
+                
+                Так что действуй
+                приходи и Сделай тату - создай свой стиль</p>
+             
+             <a class="dribbble-follow-button wow bounce" href="https://vk.com/anatomytatto">VK</a>
+             </div> <!-- ABOUT INFO END -->
+         </div><!-- LEFT PART OF THE ABOUT SECTION END -->
+        <!--Left part end-->
+         
+         <!-- RIGHT PART OF THE ABOUT SECTION -->
+         <div class="col-md-6 wow fadeInUp myphoto" data-wow-duration="4s">
+             <img src="{% static 'source/img/pngegg.png' %}" alt="Mamun Srizon" height="600px">
+         </div><!-- RIGHT PART OF THE ABOUT SECTION END -->        
+     </div><!-- ABOUT SECTION END -->
+        
+    <hr><!-- SECTION SEPARETOR LINE -->
+        
+    <!-- ===========================
+    SERVICE SECTION START
+    =========================== -->
+    <div id="services" class="container">
+       
+        <!-- SERVICE SECTION HEADING START -->
+        <div class="sectionhead  row wow fadeInUp">
+            <span class="bigicon icon-cup "></span>
+            <h3>Почему именно мы?</h3>
+            <hr class="separetor">
+         </div><!--SERVICE SECTION HEADING END-->
+         
+        <!-- SERVICE ITEMS START -->
+        <div class="row">
+               <div class="col-md-6 col-lg-4 wow fadeInUp" data-wow-duration="3s">
+                   <img src="{% static 'source/img/s1.png' %}" alt="">
+                   <h4>Найдем любое решение</h4>
+                   <p>Художественное исправление татуировок, даже самые патовые можно исправить XD.</p>
+                </div> <!-- ITEM END -->
+
+                <div class="col-md-6 col-lg-4 wow fadeInUp" data-wow-duration="3s">
+                   <img src="{% static 'source/img/s2.png' %}" alt="">
+                   <h4>Исполним мечту</h4>
+                   <p>Наш мастер подберет вам индивидуальный эских совершенно бесплатно</p>
+                </div> <!-- ITEM END -->
+
+                <div class="col-md-6 col-lg-4 wow fadeInUp" data-wow-duration="3s">
+                   <img src="{% static 'source/img/s3.png' %}" alt="">
+                   <h4>Удобной график</h4>
+                   <p>Записаться можно на любое время, мастер встретит вас, в любое удобное для вас время до 22:00.</p>
+                </div> <!-- ITEM END -->
+
+               <div class="col-md-6 col-lg-4 wow fadeInUp" data-wow-duration="3s">
+                   <img src="{% static 'source/img/s4.png' %}" alt="">
+                   <h4>Доступные цены</h4>
+                   <p>Давно мечтаете о татуировке, но не хватает денег? мы поможем исполнить вашу мечту!</p>
+                </div> <!-- ITEM END -->
+
+                <div class="col-md-6 col-lg-4 wow fadeInUp" data-wow-duration="3s">
+                   <img src="{% static 'source/img/s5.png' %}" alt="">
+                   <h4>Сильная команда</h4>
+                   <p>Мы предлагаем не только татуировки, а так же IT решения ваших вопросов, да, у нас есть свой IT-шник XD.</p>
+                </div> <!-- ITEM END -->
+
+                <div class="col-md-6 col-lg-4 wow fadeInUp" data-wow-duration="3s">
+                   <img src="{% static 'source/img/s6.png' %}" alt="">
+                   <h4>Лучшие на рынке тату</h4>
+                   <p>Чем же мы лучше? мы не экономим на расходниках, а еще бесплатно наливаем кофе и даем конфетки!</p>
+                </div> <!-- ITEM END -->
+        </div><!-- SERVICE ITEMS END-->
+    </div><!-- SERVICE SECTION END -->
+    
+    <!-- ===========================
+    PORTFOLIO SECTION START
+    =========================== -->
+    <div id="portfolio">
+        <div class="sectionhead wow bounceInUp" data-wow-duration="2s">
+          <span class="bigicon icon-rocket"></span>
+           <h3>Хотите увидть больше работ?</h3>
+           <hr class="separetor">            
+        </div><!-- PORTFOLIO SECTION HEAD END -->   
+        
+        <!-- PORTFOLIO ITEMS START -->
+        <div class="portfolioitems container">
+            <ul><div id="shotsByPlayerId"><img src="{% static 'source/img/pngegg.png' %}" height="150" alt="logo"></div></ul><!--REFER TO THE js/drifolio.js-->
+        </div><!-- PORTFOLIO ITEMS END -->
+        
+        <!--Replace the URL below with your dribbble profile URL-->
+        <a class="btn btn-default wow fadeInUp" href="https://vk.com/ds309" role="button">
+            <span class="btnicon icon-social-dribbble"></span>
+            <span class="button_text">Посмотреть все работы</span>
+        </a> 
+    </div><!-- PORTFOLIO SECTION END -->
+
+    <!-- ===========================
+    TESTIMONIAL SECTION START
+    =========================== -->
+    <div id="testimonials" class="container">
+        <div class="sectionhead wow bounceInUp" data-wow-duration="2s">
+           <span class="bigicon icon-bubbles"></span>
+           <h3>Отзывы от любимых клиентов</h3>
+           <h4>Вы можете оставить отзыв о нас в Google или Yandex, мы стараемся для вас!</h4>
+           <hr class="separetor">            
+        </div><!-- TESTIMONIAL SECTIONHEAD END -->
+        
+        <!-- TESTIMONIAL ITEMS START -->
+        <div class="row">
+            <!-- 1ST TESTIMONIAL ITEM -->
+            <div class="col-md-6 wow bounceIn" data-wow-duration="2s">
+                <div class="clientsphoto">
+                    <img src="{% static 'source/img/dan.jpg' %}" alt="Dan">
+                </div>
+                
+                <div class="quote">
+                    <blockquote>
+                       <p>Мастер Даша сделала очень клёвую татуировку, гораздо круче, чем был оригинал, который я ему прислал. Мне очень понарвилось, работа качественная.</p>                        
+                    </blockquote>
+                    <h5>Андрей</h5>
+                    <p>Постоянный клиент</p>
+                </div>                
+            </div><!-- 1ST TESTIMONIAL ITEM END -->
+            
+            <!-- 2ND TESTIMONIAL ITEM -->
+            <div class="col-md-6 wow bounceIn" data-wow-duration="3s">
+                <div class="clientsphoto">
+                    <img src="{% static 'source/img/bill.jpg' %}" alt="Bill">
+                </div>
+                
+                <div class="quote">
+                    <blockquote>
+                       <p>Когда я пришла к Даше за татуировкой, у меня были только идеи. Я даже не знала, какой конкретно эскиз я хочу, но Даша меня прекрасно поняла и нарисовала именно то, что я хотела! </p>                        
+                    </blockquote>
+                    <h5>Виктория</h5>
+                    <p>Новый клиент.</p>
+                </div>                
+            </div><!-- 2ND TESTIMONIAL ITEM END -->
+            
+            <!-- 3RD TESTIMONIAL ITEM -->
+            <div class="col-md-6 wow bounceIn" data-wow-duration="3s">
+                <div class="clientsphoto">
+                    <img src="{% static 'source/img/eric.png' %}" alt="Eric">
+                </div>
+                
+                <div class="quote">
+                    <blockquote>
+                       <p>То чувство, когда результат превзошёл ожидания!</p>                        
+                    </blockquote>
+                    <h5>Эрик</h5>
+                    <p>Отзыв из google</p>
+                </div>                
+            </div><!-- 3RD TESTIMONIAL ITEM END -->
+            
+            <!-- 4TH TESTIMONIAL ITEM -->
+            <div class="col-md-6 wow bounceIn" data-wow-duration="2s">
+                <div class="clientsphoto">
+                    <img src="{% static 'source/img/ramil.jpg' %}" alt="Ramil">
+                </div>
+                
+                <div class="quote">
+                    <blockquote>
+                       <p>Даша - ох...ый мастер! 2 дня мы делали эту красоту, по-другому не назовёшь. Мне очень понравилось!</p>                        
+                    </blockquote>
+                    <h5>Рамиль</h5>
+                    <p>Новый клиент</p>
+                </div>                
+            </div><!-- 4TH TESTIMONIAL ITEM END -->
+        </div>        
+    </div><!-- TESTIMONIAL SECTION END -->
+       
+    <!-- ===========================
+    FOOTER START
+    =========================== -->    
+    <footer>
+        <div class="container">
+            <span class="bigicon icon-speedometer "></span>
+             
+            <div class="footerlinks"><!-- FOOTER LINKS START -->            
+                <ul>
+                    <li><a href="#hero">Домой</a></li>
+                    <li><a href="#about">О нас</a></li>
+                    <li><a href="#services">Почему мы?</a></li>
+                    <li><a href="#portfolio">Портфолио</a></li>
+                    <li><a href="#testimonials">Отзывы</a></li>
+
+                    <!--replace the email address below with your email address-->
+                    <li><a href="https://vk.com/ds309">Записаться к тату мастеру</a></li>                   
+                </ul>
+            </div><!-- FOOTER LINKS END -->
+             
+            <div class="copyright"><!-- FOOTER COPYRIGHT START -->
+                <p><a href="https://vk.com/ds309">Тату мастер</a> Дария Ширманова, основатель тату студии AnatomyTatto, в Г.Ульяновске!</p>
+            </div><!-- FOOTER COPYRIGHT END -->
+             
+            <div class="footersocial wow fadeInUp" data-wow-duration="3s"><!-- FOOTER SOCIAL ICONS START -->
+                <ul>
+                    <li><a href="https://vk.com/ds309"><span class="icon-social-vk"><img src="{% static 'source/img/vk.svg' %}" alt="vk" width="50">Тату-мастер</span></a></li>
+                    <li><a href="https://vk.com/anatomytatto"><span class="icon-social-vk"><img src="{% static 'source/img/vk.svg' %}" alt="vk" width="50">Сообщество</span></a></li>
+                    <li><a href="#"><span class="icon-social-vk"><img src="{% static 'source/img/instagram.svg' %}" alt="vk" width="50">Инст</span></a></li>
+                 </ul>
+             </div><!-- FOOTER SOCIAL ICONS END -->
+         </div>
+     </footer><!-- FOOTER END -->
+    
+    <!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
+    <script src="https://code.jquery.com/jquery-latest.min.js"></script>
+    
+    <!-- Include all compiled plugins (below), or include individual files as needed -->
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.0/js/bootstrap.min.js"></script>
+    
+    <!--Other necessary scripts-->
+    <script src={% static "source/js/jquery.nicescroll.min.js" %}></script>
+    <script src={% static "source/js/jquery.jribbble-1.0.1.ugly.js" %}></script>
+    <script src={% static "source/js/drifolio.js" %}></script>
+    <script src={% static "source/js/wow.min.js.js" %}></script>
+    <script>new WOW().init();</script>    
+
+    <!-- Modal -->
+  </body>
+</html>
